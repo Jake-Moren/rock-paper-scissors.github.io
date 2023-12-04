@@ -1,0 +1,69 @@
+<!--
+    
+// Programmer: Jake Isom
+// Class: SD 230 OL
+// Date: 11/01/2023
+// Assignment: Project 2: Interim Progress #2 Rock Paper Scissors GUI
+// Reference Material: SD weeks 1-7 canvas material, and assignment specifications
+// Purpose: To get experience using methods and problem solving in JavaScript
+
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- linking my css files, js files, as well as the graphics for the different options  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="rps.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="game-screen">
+      <h1>Rock Paper Scissors</h1><!-- game title header  -->
+      <h2>Choose Your Move</h2><!--  subheading for prompting the user -->
+      <div class="choices">
+        <button id="rock" class="choice-button">
+          <i class="fas fa-hand-back-fist"></i> Rock
+        </button>
+        <button id="paper" class="choice-button">
+          <i class="fas fa-hand"></i> Paper
+        </button>
+        <button id="scissors" class="choice-button">
+          <i class="fas fa-hand-scissors"></i> Scissors
+        </button><!--  code for three buttons with the respected grahpics -->
+      </div>
+      <button id="play-button">Play</button>
+    </div>
+    <div class="result-screen">
+      <h2>Result</h2>
+      <div id="choices-display">
+        <div class="user-choice">
+          <p>User</p>
+          <div id="user-choice-display"></div>
+        </div>
+        <div class="computer-choice">
+          <p>Computer</p>
+          <div id="computer-choice-display"></div>
+        </div><!--  show user move and computer then moved into the result screen -->
+      </div>
+      <p id="result-message"></p>
+      <button id="play-again-button">Play Again</button>
+      <button id="view-results-button">View Results</button>
+    </div>
+    <div class="results-screen">
+      <h2>Results</h2>
+      <p id="user-win-count">User Wins: 0</p>
+      <p id="computer-win-count">Computer Wins: 0</p>
+      <p id="draw-count">Draws: 0</p>
+      <button id="start-new-game-button">Start a New Game</button>
+      <button id="return-to-game-button">Return to Game</button>
+    </div> <!--  alternate screen to display the stats of the game(s) -->
+    <div class="alternate-screen">
+      <h1>Welcome to Rock Paper Scissors</h1>
+      <h2>Press Start to Play</h2>
+      <button id="start-button">Start</button>
+    </div> <!-- alternate screen to display options to move forward -->
+  </div>
+</body>
+</html>
